@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+<div id="landing-screen">
+  <div class="landing-content">
+    <h1>Welcome to Shantall's Portfolio</h1>
+    <p>Click below to enter</p>
+    <button class="btn" onclick="enterSite()">Enter</button>
+  </div>
+</div>
+
+<nav id="desktop-nav">
+  <div class="logo">Shantall Cabrejo</div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav id="hamburger-nav">
+  <div class="logo">Shantall Cabrejo</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
+
+<section id="profile">
+  <div class="section__pic-container">
+    <img
+      src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png"
+      alt="My picture" />
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Shantall Cabrejo</h1>
+    <p class="section__text__p2">Software Engineer</p>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2"
+        onclick="window.open('./assets/resume-example.pdf')"
+      >
+        Download CV
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
+    </div>
+    <div id="socials-container">
+      <img
+        src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-2048x2048-np6yltn1.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="location.href='https://www.linkedin.com/in/shantallcabrejo/'"
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        alt="My Github profile"
+        class="icon"
+        onclick="location.href='https://github.com/ShantallCabrejo'"
+      />
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img
+        src="https://en.idei.club/uploads/posts/2023-06/1687438900_en-idei-club-p-aesthetic-programmer-dizain-pinterest-2.jpg"
+        alt="Profile picture"
+        class="about-pic"
+      />
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="https://static.thenounproject.com/png/4851855-200.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>2+ years <br />Frontend Development</p>
+        </div>
+        <div class="details-container">
+          <img
+            src="https://static.thenounproject.com/png/4851855-200.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>B.S. Bachelors Degree<br>Computer Science</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          Aspiring software engineer, a freshman at San Francisco State
+          University with a passion for computer science, eagerly seeking a
+          position in Google's Student Training in Engineering Program for
+          the summer of 2024. I'm dedicated to embarking on challenging
+          projects that align with Google's mission to solve complex
+          problems. The STEP program's commitment to diversity, mentorship,
+          and professional development aligns with my goals, and I look
+          forward to contributing to a collaborative and innovative
+          environment. With experience in Java, Python, and R, a desire to
+          learn, and a keen interest in connecting with fellow developers,
+          I'm excited to grow professionally alongside talented colleagues.
+        </p>
+      </div>
+    </div>
+  </div>
+  <img
+    src="https://cdn.icon-icons.com/icons2/2719/PNG/512/caret_double_down_icon_175346.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#experience'"
+  />
+</section>
+
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>HTML</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>CSS</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>SASS</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>JavaScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>TypeScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Material UI</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="details-container">
+        <h2 class="experience-sub-title">Backend Development</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>PostgreSQL</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Node JS</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Express JS</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://static.thenounproject.com/png/4587322-200.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Git</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="https://cdn.icon-icons.com/icons2/2719/PNG/512/caret_double_down_icon_175346.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
+
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="https://img.itch.zone/aW1nLzEzMTM5MjIzLnBuZw==/original/9tVo9F.png"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Hangman</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Wordle_Logo.svg/1200px-Wordle_Logo.svg.png"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Wordle</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6472/6472250.png"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Website</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="https://cdn.icon-icons.com/icons2/2719/PNG/512/caret_double_down_icon_175346.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="https://static-00.iconduck.com/assets.00/email-circle-fill-icon-2048x2048-pa63yusl.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:cabrejoshantall@gmail.com">cabrejoshantall@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-2048x2048-np6yltn1.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/shantallcabrejo/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2025 Shantall Cabrejo. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
